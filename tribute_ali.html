@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>	
+	<html lang="en">	    
+		<head>	        
+			<meta charset="utf-8">	            
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">	                
+					<meta name="viewport" content="width=device-width, initialscale=1">	                    
+						<title>Muhammad Ali Tribute</title>	                    	                    
+						<!-- Bootstrap -->	                    
+						 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+						 <link rel="stylesheet" href="assets/style.css" type="text/css">
+						 <link rel="stylesheet" href="assets/slide.css" type="text/css">
+						 <!--google fonts-->
+						 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cabin:400italic">
+						 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cookie">
+                         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->  
+                         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                         <!--angular cdn-->
+                         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+                         <!--angular bootstrap module-->
+                         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap"></script>
+                         <script src="script.js"></script>
+                          <script src="slide.js"></script>
+                               
+						<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->	                        
+						<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->	                        
+						<!--[if lt IE 9]>	                         
+						<script src="https://oss.maxcdn.com/libs/html5shiv/ 3.7.0/html5shiv.js"></script>	                         
+						<script src="https://oss.maxcdn.com/libs/respond.js/ 1.4.2/respond.min.js"></script>	                         
+						<![endif]-->
+						
+					</head>	    
+					<body>
+						<!--slider-->
+				<div ng-app="app">
+				  <div ng-controller="CarouselDemoCtrl" id="slides_control">
+				    <div>
+				      <carousel interval="myInterval">
+				        <slide ng-repeat="slide in slides" active="slide.active">
+				          <img ng-src="{{slide.image}}">
+				          <div class="carousel-caption">
+				            <div>{{slide.description}}</div>
+				          </div>
+				        </slide>
+				      </carousel>
+				    </div>
+				  </div>
+				  <div ng-controller="mainController">
+				    <div class="rows">
+				      <div class="col-xs-4 col-md-3 tribute Fade">Tribute</div>
+				      <div class="col-xs-4 col-md-6 name Fade">
+				        <h1>{{name}}</h1>
+				      </div>
+				<!--main body beginning-->
+				      <div class="col-xs-4 element Fade">
+				        <ul>
+				          <li ng-repeat="element in bio">{{element}}</li>
+				        </ul>
+				      </div>
+				      <div class="col-xs-6 death Fade">
+				        <h4>{{death}}</h4>
+				      </div>
+				<!--main body end-->
+				    </div>
+				  </div>
+	</body>	
+</html>

@@ -1,0 +1,17 @@
+#slides_control > div{
+  height: 100%;
+  box-sizing: border-box;
+}
+img{
+  margin:auto;
+  width: 400px;
+  height:400px;
+}
+#slides_control {
+  position:relative;
+  width: 400px;
+  float:right;
+  top:20px;
+    bottom:10px;
+ 
+}

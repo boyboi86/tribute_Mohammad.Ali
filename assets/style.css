@@ -1,0 +1,79 @@
+.tribute {
+  border-bottom: 5px solid yellow;
+  font-size: 25px;
+  font-weight:bold;
+  font-family: 'Cabin', sans-serif;
+}
+
+
+h1 {
+  padding-top: 220px;
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  color: black;
+}
+p{
+  font-size: 25px;
+  font-family: 'Cookie', cursive;
+}
+h4 {
+  padding-top: 0px;
+  color: grey;
+}
+
+li {
+  font-size: 25px;
+  font-family: 'Cookie', cursive;
+  text-decoration:none;
+  color:black;
+}
+
+.Fade {
+    opacity:0;
+  
+    -webkit-animation:fadeIn ease-in 1;  
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+@-webkit-keyframes fadeIn { 
+  from { opacity:0;} 
+  to { opacity:1; } 
+}
+
+@-moz-keyframes fadeIn { 
+  from { opacity:0; } 
+  to { opacity:1; } 
+}
+
+@keyframes fadeIn { 
+  from { opacity:0;} 
+  to { opacity:1; } 
+}
+
+.Fade.name {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.Fade.element {
+-webkit-animation-delay: 1.3s;
+-moz-animation-delay:1.3s;
+animation-delay: 1.3s;
+}
+
+.Fade.death {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
